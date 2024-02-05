@@ -3,48 +3,48 @@
 # Dependency directories
 node_modules/
 
-# Optional: Log files and npm debug log
+# Log files and npm debug log
 npm-debug.log*
 
-# Optional: Runtime data
+# Runtime data
 pids
 logs
 results
 coverage
 .nyc_output
 
-# Optional: System Files
+# System Files
 .DS_Store
 Thumbs.db
 
-# Optional: Environment variables file
+# Environment variables file
 .env
 .env.local
 .env.*.local
 
-# Optional: Visual Studio Code configuration
+# Visual Studio Code configuration
 .vscode/
 
-# Optional: WebStorm configuration
+# WebStorm configuration
 .idea/
 
-# Optional: Jest coverage
+# Jest coverage
 coverage/
 
-# Optional: Next.js build output
+# Next.js build output
 .next/
 out/
 
-# Optional: Yarn
+# Yarn
 yarn-error.log
 yarn.lock
 
-# Optional: TypeScript build
+# TypeScript build
 dist/
 *.tsbuildinfo
 *.log
 
-# Optional: ESLint
+# ESLint
 .eslintcache
 
 
