@@ -1,0 +1,7 @@
+METAZAK PRO RESEARCH :
+***This will contain all researches i'll be making for this project and my solutions explained to make it easier for other Developers to understand.***
+
+Reserch Topics :
+- Grids (grid, grid-row, grid-col, grid-flow )
+- Flex-Box (flex, flex-shrink , flex-row , flex-col , flex-direction)
+- Media Query (sm: 640px, md : 768px, lg: 1024px )
