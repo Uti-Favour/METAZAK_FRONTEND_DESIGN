@@ -12,6 +12,10 @@
 
 
 
-@keyframes identifier {
-  
+.menu_toggle_block{
+  display: block;
+}
+
+.menu_toggle_hidden{
+  display: none;
 }

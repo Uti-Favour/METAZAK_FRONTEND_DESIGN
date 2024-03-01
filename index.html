@@ -18,26 +18,51 @@
   <body class="bg-[#010101]">
     <div class="">
       <!-- ------ Navigation Bar ------ -->
-      <div class="flex justify-center">
-        <nav class="text-white cursor-pointer hidden lg:block">
-          <ul class="flex mt-10 space-x-10">
-            <img src="logo.png" alt="" />
-            <li><a href="index.html">Home</a></li>
-            <li><a href="MetaZakPro.html">Metazak Pro</a></li>
-            <li><a href="Academy.html">Academy</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#">Sign In</a></li>
-          </ul>
+      <div class="">
+        <nav class="text-white cursor-pointer ">
+
+          <!-- ------ Desktop Menu ------ -->
+          <div class="flex justify-center">
+            <div class="lg:block hidden">
+              <ul class="flex mt-10 space-x-10">
+                <img src="logo.png" alt="" />
+                <li><a href="index.html">Home</a></li>
+                <li><a href="MetaZakPro.html">Metazak Pro</a></li>
+                <li><a href="Academy.html">Academy</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Sign In</a></li>
+              </ul>
+            </div>
+
+          </div>
+          
+
+          <!-- ------ Mobile Menu ------ -->
+
+          <div class="lg:hidden">
+            <div class="flex justify-center space-x-64 mt-10">
+              <img src="images/photo_2023-10-15_02-17-00 1.png" class="rounded-full mr-5"/>
+            <button class="btn"><i class="fas fa-bars"></i></button>
+            </div>
+            <ul class="ml-5 mt-5 leading-10 text-white menu_toggle_hidden">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="MetaZakPro.html">Metazak Pro</a></li>
+              <li><a href="Academy.html">Academy</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#">Sign In</a></li>
+            </ul>
+          </div>
+
         </nav>
       </div>
 
       <!-- ----- Hero Section ----- -->
 
       <!-- ------ Header Text Section ------ -->
-      <div class="mt-48 lg:mt-28 h-screen">
+      <div class="mt-40 lg:mt-28 h-screen">
         <div class="text-center mx-auto text-white">
           <h1
-            class="lg:text-6xl text-3xl lg:font-extrabold font-extrabold lg:max-w-3xl mx-auto"
+            class="lg:text-6xl text-4xl lg:font-extrabold font-bold lg:max-w-3xl mx-auto"
           >
             GateWay to Intelligent Crypto Investments.
           </h1>
@@ -53,10 +78,10 @@
     </div>
 
     <!-- ------ Goals Section ------ -->
-    <div class="ml-6 lg:ml-52">
+    <div class="ml-6 lg:ml-52 -mt-52 lg:mt-0">
       <div class="text-white">
         <h2 class="text-3xl lg:text-5xl font-bold">Our Goals</h2>
-        <p class="mt-5 max-w-sm text-sm lg:text-base">
+        <p class="mt-5 lg:max-w-sm max-w-[300px] text-sm lg:text-base">
           To enable users of all investment levels to conduct seamless OnChain
           Analysis and effortlessly monitor smart money flow.
         </p>
@@ -70,11 +95,11 @@
       </div>
       <div class="-mt-[110%]">
         <!-- ------ Content Container Div ------ -->
-        <div class="ml-6 lg:ml-[60%] text-white">
+        <div class="ml-6 lg:ml-[60%] text-white mt-32 lg:mt-0">
           <h1 class="text-3xl lg:text-5xl font-bold max-w-sm">
             The Metrics summary.
           </h1>
-          <p class="mt-4 max-w-sm text-sm lg:text-base">
+          <p class="mt-4 lg:max-w-sm max-w-xs text-sm lg:text-base">
             Metrics are measures of quantitative assessment commonly used for
             accessing, comparing, and tracking performance or production.
           </p>
@@ -108,7 +133,7 @@
             <div>
               <!-- ------ Image Div ------ -->
               <div>
-                <img src="images/Figure.png" class="w-14" />
+                <img src="images/Figure-2 (1).png" class="w-14 mb-10" />
               </div>
 
               <!-- ------ Text Description ------- -->
@@ -126,11 +151,11 @@
             <div>
               <!-- ------ Image Div ------ -->
               <div>
-                <img src="images/Figure.png" class="w-14" />
+                <img src="images/Figure(4).png" class="w-14" />
               </div>
 
               <!-- ------ Text Description ------- -->
-              <div>
+              <div class="-mt-44">
                 <h3 class="text-2xl mb-5 font-bold">Supply Distribution</h3>
                 <p class="max-w-72 mb-10 text-sm">
                   The maximum supply is the upper limit of number of tokens that
@@ -145,11 +170,11 @@
             <div>
               <!-- ------ Image Div ------ -->
               <div>
-                <img src="images/Figure.png" class="w-14" />
+                <img src="images/Figure(4).png" class="w-14" />
               </div>
 
               <!-- ------ Text Description ------- -->
-              <div>
+              <div class="-mt-44">
                 <h3 class="text-2xl mb-5 font-bold">Total Value Locked</h3>
                 <p class="max-w-72 mb-10 text-sm">
                   Total value locked (TVL) Is a metric used to measure the total
@@ -185,7 +210,7 @@
             <div>
               <!-- ------ Image Div ------ -->
               <div>
-                <img src="images/Figure.png" class="w-14" />
+                <img src="images/Figure-2 (1).png" class="w-14 mb-10" />
               </div>
 
               <!-- ------ Text Description ------- -->
@@ -347,7 +372,9 @@
         </ul>
       </div>
     </footer>
-    <div class="py- px-4 text-white bg-white"></div>
+
+    
+    
     <script src="JS/main.js"></script>
   </body>
 </html>
