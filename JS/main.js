@@ -1,21 +1,31 @@
-document.addEventListener('DOMContentLoaded', ()=>{
-
-    let display_hidden = document.querySelector('.menu_toggle_hidden');
-    let display_block = document.querySelector('.menu_toggle_block');
-    const btn = document.querySelector('.btn');
+document.addEventListener('DOMContentLoaded' , function(){
+let navButton = document.getElementById('btn');
+let hiddenToggle = document.querySelector('.menu_toggle_hidden');
 
 
-    function OpenNavigationBar(){
-        btn.addEventListener('click' , () => {
-            display_hidden.classList.toggle("display_block");
-            
 
-        });
 
+
+const fadeInElements = document.querySelectorAll(".fade-in");
+
+function checkFadeIn() {
+  fadeInElements.forEach((element) => {
+    const rect = element.getBoundingClientRect();
+    const triggerHeight = window.innerHeight * 0.8; // Adjust the percentage as needed
+
+    if (rect.top < triggerHeight && rect.bottom >= 0) {
+      element.classList.add("in-view");
+    } else {
+      element.classList.remove("in-view");
     }
+  });
+}
 
-    
-    OpenNavigationBar();
-    
+window.addEventListener("scroll", checkFadeIn);
+window.addEventListener("resize", checkFadeIn);
+
+// Initial check when the page is loaded
+checkFadeIn();
+
 
 });
