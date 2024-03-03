@@ -44,3 +44,14 @@
   transform: translateY(0);
 }
 
+.fade-in-right{
+  opacity: 0;
+  transform: translateX(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-in-right.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
