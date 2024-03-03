@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
   let navButton = document.getElementById('btn');
   const fadeInElements = document.querySelectorAll(".fade-in-top");
   const fadeInElementsLeft = document.querySelectorAll(".fade-in-left");
+  const fadeInElementsRight = document.querySelectorAll(".fade-in-right");
 
 
     const button = document.getElementById("btn");
@@ -39,7 +40,13 @@ document.addEventListener('DOMContentLoaded', function() {
     checkFadeIn(fadeInElementsLeft);
   });
 
+  window.addEventListener("resize", function() {
+    checkFadeIn(fadeInElements);
+    checkFadeIn(fadeInElementsRight);
+  });
+
   // Initial check when the page is loaded
   checkFadeIn(fadeInElements);
   checkFadeIn(fadeInElementsLeft);
+  checkFadeIn(fadeInElementsRight);
 });

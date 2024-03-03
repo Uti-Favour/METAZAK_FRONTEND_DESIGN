@@ -17,16 +17,43 @@
   <body class="bg-[#010101]">
     <!-- ------ Navigation Bar ------ -->
     <div class="flex justify-center">
-      <nav class="text-white cursor-pointer hidden lg:block">
-        <ul class="flex mt-10 space-x-10">
-          <img src="logo.png" alt="" />
-          <li><a href="index.html">Home</a></li>
-          <li><a href="MetaZakPro.html">Metazak Pro</a></li>
-          <li><a href="Academy.html">Academy</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#">Sign In</a></li>
-        </ul>
+      <nav class="text-white cursor-pointer">
+        <!-- ------ Desktop Menu ------ -->
+        <div class="flex justify-center">
+          <div class="lg:block hidden">
+            <ul class="flex mt-10 space-x-10">
+              <img src="logo.png" alt="" />
+              <li><a href="index.html">Home</a></li>
+              <li><a href="MetaZakPro.html">Metazak Pro</a></li>
+              <li><a href="Academy.html">Academy</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#">Sign In</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ------ Mobile Menu ------ -->
+
+        <div class="lg:hidden">
+          <div class="flex justify-center space-x-64 mt-10">
+            <img
+              src="images/photo_2023-10-15_02-17-00 1.png"
+              class="rounded-full mr-5 z-40"
+            />
+            <button type="button" id="btn"><i class="fas fa-bars"></i></button>
+          </div>
+          <div class="menu_toggle_hidden">
+            <ul class="ml-5 mt-5 leading-10 text-white">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="MetaZakPro.html">Metazak Pro</a></li>
+              <li><a href="Academy.html">Academy</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#">Sign In</a></li>
+            </ul>
+          </div>
+        </div>
       </nav>
+
     </div>
 
     <!-- ------- Academy hero section ------- -->
@@ -69,7 +96,7 @@
       <!-- ------ Descriptions (Number 1) ------ -->
       <div class="grid lg:flex">
         <!-- ----- Individual Description ----- -->
-        <div class="ml-5 lg:ml-32 text-white mt-64">
+        <div class="ml-5 lg:ml-32 text-white mt-64 mb-10 lg:mb-0">
           <h1 class="text-5xl lg:text-5xl font-bold">OnChain Metrics</h1>
           <p class="mt-5 lg:max-w-xl max-w-xs text-sm lg:text-sm">
             This metric refers to the number of unique addresses that have
@@ -95,7 +122,7 @@
           <img src="images/SVG(2).png" class="lg:w-[80%]" />
         </div>
         <!-- ----- Individual Description ----- -->
-        <div class="ml-5 lg:mr-32 text-white">
+        <div class="ml-5 lg:mr-32 text-white mb-10 lg:mb-0">
           <h1 class="text-5xl lg:text-5xl font-bold">Transaction Volume</h1>
           <p class="mt-5 lg:max-w-xl max-w-xs text-sm lg:text-sm">
             Transaction volume represents the total value of cryptocurrency
@@ -112,7 +139,7 @@
 
       <div class="grid lg:flex">
         <!-- ----- Individual Description  (Number 3)----- -->
-        <div class="ml-5 lg:ml-32 mt-32 text-white">
+        <div class="ml-5 lg:ml-32 mt-32 text-white mb-10 lg:mb-0">
           <h1 class="text-5xl lg:text-5xl font-bold">OnChain Metrics</h1>
           <p class="mt-5 lg:max-w-xl max-w-xs text-sm lg:text-sm">
             Supply distribution refers to the distribution of crptocurency
@@ -138,7 +165,7 @@
           <img src="images/Clip path group.png" class="lg:w-[90%]" />
         </div>
         <!-- ----- Individual Description ----- -->
-        <div class="ml-5 lg:mr-32 text-white">
+        <div class="ml-5 lg:mr-32 text-white mb-10 lg:mb-0">
           <h1 class="text-5xl lg:text-5xl font-bold">Transaction Volume</h1>
           <p class="mt-5 lg:max-w-xl max-w-xs text-sm lg:text-sm">
             This metrics calculates the difference between the current market
@@ -235,5 +262,8 @@
         </ul>
       </div>
     </footer>
+
+
+    <script src="JS/main.js"></script>
   </body>
 </html>
