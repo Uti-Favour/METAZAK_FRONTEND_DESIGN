@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     button.addEventListener("click", function() {
       menuToggleHidden.classList.toggle("menu_toggle_block");
       menuToggleHidden.classList.toggle("menu_toggle_hidden");
+      console.log('Clicked');
     });
 
   

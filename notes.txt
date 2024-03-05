@@ -20,5 +20,45 @@ Reserch Topics :
 
 
 
+<!-- ------ Navigation Bar ------ -->
+    <div class="flex justify-center">
+      <nav class="text-white cursor-pointer">
+        <!-- ------ Desktop Menu ------ -->
+        <div class="flex justify-center lg:mt-8">
+          <div class="lg:block hidden">
+            <ul class="flex mt-10 space-x-10">
+                          <img src="images/photo_2023-10-15_02-17-00 1.png" class="rounded-full mr-20"/>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="MetaZakPro.html">Metazak Pro</a></li>
+              <li><a href="Academy.html">Academy</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#">Sign In</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ------ Mobile Menu ------ -->
+
+        <div class="lg:hidden">
+          <div class="flex justify-center space-x-64 mt-10">
+            <img
+              src="images/photo_2023-10-15_02-17-00 1.png"
+              class="rounded-full mr-5 z-40"
+            />
+            <button type="button" id="btn"><i class="fas fa-bars"></i></button>
+          </div>
+          <div class="menu_toggle_hidden">
+            <ul class="ml-5 mt-5 leading-10 text-white">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="MetaZakPro.html">Metazak Pro</a></li>
+              <li><a href="Academy.html">Academy</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#">Sign In</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
 
 
